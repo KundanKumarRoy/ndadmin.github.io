@@ -1,0 +1,279 @@
+
+/*------------------------------------------------------------
+	Page Loading
+-------------------------------------------------------------*/
+.no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.counter {
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+
+.preloader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    background: url(../image/loader.gif) center no-repeat #1c1c1c;
+}
+
+ 
+/* ======== Reset ======== */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:active,
+a:focus {
+    outline: none;
+}
+
+
+/* ======== Variables ========*/
+
+:root {
+    --brand-color: #4eb548;
+    --brand-light: #a6daa3;
+}
+
+
+/* ======== Global ========*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased; 
+    font-family: 'Segoe UI Regular';
+    background-color: #e5e5e5;
+}
+.pointer{
+    cursor: pointer;
+}
+.t-color{
+    color: var(--brand-color);
+}
+.bg-brand{
+    background-color: var(--brand-color);
+}
+.ob_cover{
+    object-fit: cover;
+}
+.ob-fill{
+    object-fit: fill;
+}
+.ob-contain{
+    object-fit: contain;
+}
+a{
+text-decoration: none;
+}
+.fs-xsm{
+    font-size: 10px!important;
+}
+.rounded-lg{
+    border-radius: 20px!important;
+}
+.c-f-c{
+    box-shadow: none!important;
+    outline: none!important;
+    background-color: transparent;
+}
+.form-check-input:checked {
+    background-color: var(--brand-color);
+    border-color: var(--brand-color); 
+}
+.hover:hover{
+background-color:var(--brand-color); 
+}
+.fa-bell{
+    -webkit-text-stroke: 2px #000;
+    color: transparent;
+}
+.btn-danger{
+    background-color: #fa6374!important;
+}
+.btn-success{
+    background-color: #4aab93!important;
+}
+.btn-primary{
+    background-color: #3980c0!important;
+}
+.fs-7{
+    font-size: 15px!important;
+}
+/* =========================================
+                scroll style
+============================================ */
+::-webkit-scrollbar{
+    width: 5px;
+    background-color:powderblue;
+}
+/* left side barr style */
+.main-wrapper{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+} 
+.right-sidebar{
+    width: 100%;
+    min-height: 100vh; 
+}
+.right-sidebar-list{
+    display: flex;
+    justify-content: end;
+} 
+.left{
+    position: absolute;
+    left: -150px;
+    top: 0; 
+}
+/* =========================================Right Column of Index page/top Header============================*/
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    color: #fff;
+    font-size: 10px;
+}
+.profile-img{
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(231, 228, 228);
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+}
+.Side-Bar{
+     
+    height: 630px;
+}
+.Side-Bar a span{
+    font-size: 12px!important;
+} 
+
+/* ======================================================================================
+                            Index page style
+========================================================================================*/
+
+
+/* ======================================================================================
+                            Login page style
+========================================================================================*/
+.lgoinhero{   
+    height: 600px; 
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; 
+    background-image: url(../img/hero-1.png); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.lgoinhero-2{
+    height: 600px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.lgoinhero-2:after{  
+    content: ""; 
+    width: 250px;
+    height: 300px;
+    position:absolute;
+     top: 0;
+     left: 0;
+    background-image: url(../img/hero-2.png);  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.lgoinhero-2::before{  
+    content: ""; 
+    width: 250px;
+    height: 243px;
+    position:absolute;
+     bottom: 0;
+     right: 0;
+    background-image: url(../img/logbrush.png);  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.log-in-box{ 
+    width: 300px;
+    height: 325px;
+   
+}
+/* Buisiness details Edit section */
+.buisiness-image-box{
+    width: 100%;
+    height: 200px;
+}
+.buisiness-image-box img{
+    width: 100%;
+    height: 100%;
+}
+.file-uplod{
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--brand-color);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor:pointer;
+}
+/* =============================================
+                Responsive Section
+================================================ */
+/*  Screen size 420px */
+@media (max-width:420px){
+    .lgoinhero-2{
+        height: 100vh;
+        
+    }
+}
+
+@media (max-width:420px){
+    .vrt-list-thumb .vrt-list-thumb-figure img {
+        height: 280px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
