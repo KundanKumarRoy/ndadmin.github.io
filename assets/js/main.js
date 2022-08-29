@@ -1,3 +1,11 @@
+// toggler 
+// $(document).ready(function () {
+  
+//   $(".menu-bar").click(function () {
+//     $(".left-sidebar").toggle(200);
+//   });
+// });
+
 // Google chart curving chart
 
 google.charts.load('current', {'packages':['corechart']});
