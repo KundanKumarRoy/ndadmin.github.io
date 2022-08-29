@@ -21,108 +21,232 @@
 
 <body>
     <section class="main-wrapper position-relative">
-        <div class="left-sidebar  bg-white shadow-sm pe-0" >
+        <div class="left-sidebar  bg-white shadow-sm pe-0 d-none d-md-block">
             <!--Brand Logo -->
             <div class="d-flex justify-content-center align-items-center p-2 pb-4">
-                <a href="index.html">
-                    <img src="assets/img/brand.svg" alt="" class="img-fluid" width="50">
-                  </a>
+              <a href="index.html">
+                <img src="assets/img/brand.svg" alt="" class="img-fluid" width="50">
+              </a>
             </div>
             <!-- Side Bar menu list -->
-            <div class="Side-Bar ">
-                <div class="mt-3">
-                    <ul class="p-0 left-side-bar-linkList">
-                        <li class="mb-3">
-                            <a href="index.html"
-                                class="d-flex flex-column justify-content-center align-items-center p-3 px-2">
-                                <i class="fa-solid fa-house-chimney fs-5"></i>
-                                <span class="fs-6">Home</span>
-                            </a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="Categories.html"
-                                class="d-flex flex-column justify-content-center align-items-center p-3 px-2">
-                                <i class="fa-solid fa-border-all fs-5"></i>
-                                <span class="fs-6">Masters</span>
-                            </a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="" class="d-flex flex-column justify-content-center align-items-center p-3 px-2">
-                                <i class="fa-solid fa-location-dot fs-5"></i>
-                                <span class="fs-6">Location</span>
-                            </a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="userlist.html"
-                                class="d-flex flex-column justify-content-center align-items-center p-3 px-2">
-                                <i class="fa-solid fa-user fs-5"></i>
-                                <span class="fs-6">Users</span>
-                            </a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="businesslist.html"
-                                class="d-flex flex-column justify-content-center align-items-center p-3 px-2">
-                                <i class="fa-solid fa-file-signature fs-5"></i>
-                                <span class=" ">Business List</span>
-                            </a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="" class="d-flex flex-column justify-content-center align-items-center p-3 px-2">
-                                <i class="fa-solid fa-address-card fs-5"></i>
-                                <span class="fs-6">Contact Us</span>
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="d-flex flex-column justify-content-center align-items-center p-3 px-2">
-                                <i class="fa-solid fa-right-from-bracket fs-5"></i>
-                                <span class="fs-6">Log Out</span>
-                            </a>
-                        </li>
+            <div class="Side-Bar">
+              <div class="mt-3">
+                <ul class="p-0 left-side-bar-linkList">
+                  <li class="mb-3">
+                    <a href="index.html"
+                      class=" active d-flex flex-column justify-content-center align-items-center p-3 px-2 ">
+                      <i class="fa-solid fa-house-chimney fs-5"></i>
+                      <span class="fs-6">Home</span>
+                    </a>
+                  </li>
+                  <li class="mb-3 dropend">
+                    <a href="#" class="d-flex justify-content-center align-items-center p-3 px-2 dropdown-toggle"
+                      role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                     <div class="d-flex justify-content-center align-items-center flex-column">
+                      <i class="fa-solid fa-border-all fs-5"></i>
+                      <span class="fs-6 ">Masters</span>
+                     </div>
+                     <!-- <i class="fa-solid fa-angle-right position-absolute end-0 bottom-50  "></i> -->
+                    </a>
+      
+                    <!-- Master DropDown -->
+                    <ul class="dropdown-menu p-0 m-0" aria-labelledby="dropdownMenuLink">
+                     <li>
+                      <a href="Categories.html" class="dropdown-item ms-0 "> 
+                      Categories 
+                    </a>
+                     </li>
+                     <li>
+                      <a href="Categories.html" class="dropdown-item ms-0 "> 
+                        Sub Categories
+                    </a>
+                     </li>
+                     <li>
+                      <a href="Categories.html" class="dropdown-item ms-0 "> 
+                        Categories
+                    </a>
+                     </li>
                     </ul>
-                </div>
+      
+                  </li>
+      
+                  <li class="mb-3">
+                    <a href="location.html" class="d-flex flex-column justify-content-center align-items-center p-3 px-2">
+                      <i class="fa-solid fa-location-dot fs-5"></i>
+                      <span class="fs-6">Location</span>
+                    </a>
+                  </li>
+                  <li class="mb-3">
+                    <a href="userlist.html" class="d-flex flex-column justify-content-center align-items-center p-3 px-2">
+                      <i class="fa-solid fa-user fs-5"></i>
+                      <span class="fs-6">Users</span>
+                    </a>
+                  </li>
+                  <li class="mb-3">
+                    <a href="businesslist.html" class="d-flex flex-column justify-content-center align-items-center p-3 px-2">
+                      <i class="fa-solid fa-file-signature fs-5"></i>
+                      <span class=" ">Business List</span>
+                    </a>
+                  </li>
+                  <li class="mb-3">
+                    <a href="contactus.html" class="d-flex flex-column justify-content-center align-items-center p-3 px-2">
+                      <i class="fa-solid fa-address-card fs-5"></i>
+                      <span class="fs-6">Contact Us</span>
+      
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="d-flex flex-column justify-content-center align-items-center p-3 px-2">
+                      <i class="fa-solid fa-right-from-bracket fs-5"></i>
+                      <span class="fs-6">Log Out</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </div>
+          </div> 
+      <!-- mobile view --> 
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width:130px;">
+          <div class="offcanvas-header">
+              <a href="index.html">
+                  <img src="assets/img/brand.svg" alt="" class="img-fluid" width="50">
+              </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body w-100">
+              <div class="mt-3">
+                  <ul class="p-0 left-side-bar-linkList">
+                    <li class="mb-3">
+                      <a href="index.html"
+                        class=" active d-flex flex-column justify-content-center align-items-center p-3 px-2 ">
+                        <i class="fa-solid fa-house-chimney fs-5"></i>
+                        <span class="fs-6">Home</span>
+                      </a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="d-flex justify-content-center align-items-center p-3 px-2 dropdown-toggle"
+                        role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                       <div class="d-flex justify-content-center align-items-center flex-column">
+                        <i class="fa-solid fa-border-all fs-5"></i>
+                        <span class="fs-6 ">Masters</span>
+                       </div>
+                       <!-- <i class="fa-solid fa-angle-right position-absolute end-0 bottom-50  "></i> -->
+                      </a>
+        
+                      <!-- Master DropDown -->
+                      <ul class="dropdown-menu p-0 m-0" aria-labelledby="dropdownMenuLink">
+                       <li>
+                        <a href="Categories.html" class="dropdown-item ms-0 "> 
+                        Categories 
+                      </a>
+                       </li>
+                       <li>
+                        <a href="Categories.html" class="dropdown-item ms-0 "> 
+                          Sub Categories
+                      </a>
+                       </li>
+                       <li>
+                        <a href="Categories.html" class="dropdown-item ms-0 "> 
+                          Categories
+                      </a>
+                       </li>
+                      </ul>
+        
+                    </li>
+        
+                    <li class="mb-3">
+                      <a href="location.html" class="d-flex flex-column justify-content-center align-items-center p-3 px-2">
+                        <i class="fa-solid fa-location-dot fs-5"></i>
+                        <span class="fs-6">Location</span>
+                      </a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="userlist.html" class="d-flex flex-column justify-content-center align-items-center p-3 px-2">
+                        <i class="fa-solid fa-user fs-5"></i>
+                        <span class="fs-6">Users</span>
+                      </a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="businesslist.html" class="d-flex flex-column justify-content-center align-items-center p-3 px-2">
+                        <i class="fa-solid fa-file-signature fs-5"></i>
+                        <span class=" ">Business List</span>
+                      </a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="contactus.html" class="d-flex flex-column justify-content-center align-items-center p-3 px-2">
+                        <i class="fa-solid fa-address-card fs-5"></i>
+                        <span class="fs-6">Contact Us</span>
+        
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="d-flex flex-column justify-content-center align-items-center p-3 px-2">
+                        <i class="fa-solid fa-right-from-bracket fs-5"></i>
+                        <span class="fs-6">Log Out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div> 
+          </div>
+        </div> 
+      <!-- mobile view -->
         <!-- Right side bar section  -->
         <div class="right-sidebar">
             <div class="container-fluid">
                 <div class="row   bg-white shadow-sm">
                     <div class="col-12">
                         <!-- admin-profile icon and Notificatin -->
-                        <div class="d-flex justify-content-between align-items-center p-2">
-                            <div class="menu-bar ms-3 pointer">
-                                <i class="fa-solid fa-bars fs-3 t-color"></i>
-                            </div>
-                            <!-- nontification icon -->
-                            <div class="d-flex justify-content-end align-items-center">
-                                <div class="notification me-4">
-                                    <span class="  position-relative">
-                                        <i class="fa-solid fa-bell fs-4 t-color"></i>
-                                        <span
-                                            class=" circle position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-                                            5
-                                        </span>
-                                    </span>
+                        <div class="row   bg-white shadow-sm">
+                            <div class="d-flex justify-content-between align-items-center py-3">
+                              <div class="menu-bar ms-3 pointer d-none d-md-block">
+                                  <i class="fa-solid fa-bars fs-3 t-color"></i>
                                 </div>
+                                <!-- Mobile view toggle -->
+                                <a class="d-block d-md-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                    <i class="fa-solid fa-bars fs-3 t-color"></i>
+                                  </a> 
+                                <!-- Mobile view toggle -->
                                 <!-- nontification icon -->
-
-                                <!-- Profile Image -->
-                                <div class="d-flex">
+                                <div class="d-flex justify-content-end align-items-center">
+                                  <div class="notification me-4">
+                                    <span class="  position-relative">
+                                      <i class="fa-solid fa-bell fs-4 t-color"></i>
+                                      <span
+                                        class=" circle position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                        5
+                                      </span>
+                                    </span>
+                                  </div>
+                                  <!-- nontification icon -->
+                  
+                                  <!-- Profile Image -->
+                                  <div class="d-flex">
                                     <div class="profile-img rounded-circle">
-                                        <img src="assets/img/profile.jpg" alt="profile_img"
-                                            class="img-fluid ob-cover rounded-circle">
+                                    <a href="">  <img src="assets/img/profile.jpg" alt="profile_img" class="img-fluid ob-cover rounded-circle"></a>
                                     </div>
                                     <!-- profile-title" -->
                                     <div class="mx-3">
-                                        <h3 class="fs-5 mb-0">Mira Desai</h3>
-                                        <h4 class="fs-6 text-muted mb-0">Admin</h4>
+                                      <h3 class="fs-5 mb-0">Mira Desai</h3>
+                                      <h4 class="fs-6 text-muted mb-0">Admin</h4>
+                                    </div>
+                                    <div class="dropdown">
+                                      <a class=" text-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                       
+                                      </a>
+                                      <ul class="dropdown-menu mt-5">
+                                        <li><a class="dropdown-item" href="#">Profile Edit</a></li>
+                                        <li><a class="dropdown-item" href="#">Log Out  </a></li>
+                                       
+                                      </ul>
                                     </div>
                                     <!-- Profile Image end -->
-                                </div> 
+                                  </div>
                             </div>
-                        </div>
+              
+                            </div>
+                          </div>
                         <!-- ********************************************************* -->
-                     <div class="text-center">
+                     <div class="text-center overflow-auto">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30703620.672472216!2d64.41390989859407!3d20.050418843029927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1661335898476!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                      </div>
                         <!-- ********************************************************** -->
