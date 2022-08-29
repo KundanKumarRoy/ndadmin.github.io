@@ -76,7 +76,7 @@ body {
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased; 
     font-family: 'Segoe UI Regular';
-    background-color: #e5e5e5;
+    background-color: #fbfbfb;
 }
 .pointer{
     cursor: pointer;
@@ -136,15 +136,18 @@ background-color:var(--brand-color);
 /* =========================================
                 scroll style
 ============================================ */
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
     width: 5px;
     background-color:powderblue;
-}
-/* left side barr style */
+} */
+/* left side_Bar style */
 .main-wrapper{
     width: 100%;
     display: flex;
     gap: 5px;
+}
+.left-sidebar {
+    width: 120px;
 } 
 .right-sidebar{
     width: 100%;
@@ -158,6 +161,23 @@ background-color:var(--brand-color);
     position: absolute;
     left: -150px;
     top: 0; 
+    transition: all, 0.5s;
+}
+.left-side-bar-linkList li a{ 
+    margin-left: 15px; 
+}
+.active{
+    background-color: var(--brand-light); 
+    position: relative;
+}
+.active::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 3px;
+    height: 100%;
+    background-color: green;
 }
 /* =========================================Right Column of Index page/top Header============================*/
 .circle{
@@ -268,12 +288,8 @@ background-color:var(--brand-color);
         height: 100vh;
         
     }
-}
-
-@media (max-width:420px){
-    .vrt-list-thumb .vrt-list-thumb-figure img {
-        height: 280px;
-        width: 100%;
-        object-fit: cover;
+    .tkk{
+        margin-left: 0!important;
     }
-}
+} 
+ 
